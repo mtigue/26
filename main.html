@@ -15,8 +15,6 @@ window.onload = function() {
 </script>
 
 
-
-
 <!------------BEGIN SITELOADER-------------->
 
 <div id="siteLoader2">
@@ -29,7 +27,7 @@ window.onload = function() {
   
   
   
-   <img src="img2/loader.gif">  
+   <img src="../25/img2/loader.gif">  
   
    </div>
 
@@ -44,7 +42,7 @@ window.onload = function() {
     
     
     
-    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" href="../25/assets/images/apple-touch-icon.png"/>
     
     <script>
 		if (window.screen.height==568) { // iPhone 4"
@@ -55,29 +53,29 @@ window.onload = function() {
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
     
     <!-- css -->
-    <link rel="stylesheet" href="jquery.mobile-1.3.0.min.css" />
-   <link rel="stylesheet" href="assets/css/style1.css">
+    <link rel="stylesheet" href="../25/jquery.mobile-1.3.0.min.css" />
+   <link rel="stylesheet" href="../25/assets/css/style1.css">
  <!--    <link rel="stylesheet" href="assets/css/apprise.min.css" />  -->
-    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="../25/assets/css/fonts.css">
     
     
-    <link rel="stylesheet" href="yale.css"><!--themerollser theme---> 
-    <link rel="stylesheet" href="web4u.css"> 
+    <link rel="stylesheet" href="../25/yale.css"><!--themerollser theme---> 
+    <link rel="stylesheet" href="../25/web4u.css"> 
     <link rel="stylesheet" href="http://www.web4uonline.com/yalecc/web4u-out.css">
 
     <!-- scripts -->
-    <script src="assets/js/jquery-1.8.2.min.js"></script>
-	<script src="assets/js/jquery.mobile-1.3.0.min.js"></script>
-	<script src="assets/js/screen.js"></script>
-	<script src="assets/js/apprise-1.5.min.js"></script> 
+    <script src="../25/assets/js/jquery-1.8.2.min.js"></script>
+	<script src="../25/assets/js/jquery.mobile-1.3.0.min.js"></script>
+	<script src="../25/assets/js/screen.js"></script>
+	<script src="../25/assets/js/apprise-1.5.min.js"></script> 
 	
 	
-	<script src="readinglink.js"></script> 
-	<script src="web4u.js"></script> 
+	<script src="../25/readinglink.js"></script> 
+	<script src="../25/web4u.js"></script> 
 	<script src="http://www.web4uonline.com/yalecc/web4u-out.js"></script> 
 
 
-
+	<script src="../25/phoengap.js"></script>
 
 
 
@@ -122,21 +120,13 @@ $("div.ui-collapsible-set").live("expand", function(e) {
             $(window).scrollTop(top);
 });
 
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
+                                    
 
 </script>
 	
       
 </head>
 <body style="background-color:#5b7c87 !important;">
-<div id="hider2">
 
 
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
@@ -146,19 +136,13 @@ $("div.ui-collapsible-set").live("expand", function(e) {
 <div data-role="page" id="homepage" data-theme="a">
 
 
+
 <div data-role='header' class='page-header' data-theme="b" >
-
-
-
-
-<div class='title'><img style='margin:0px 6px -6px 0px;' src='img2/logo.png'>STM Yale</div>
-
-
-
-
-
-
+<div class='title'>
+	<img style='margin:0px 6px -6px 0px;' src='../25/img2/logo.png'>STM Yale</div>
 </div>
+
+   
 
 
 
@@ -176,47 +160,34 @@ $("div.ui-collapsible-set").live("expand", function(e) {
 		});
 	</script>
 	<!-- /slider -->
-
-<!----------------------BEGIN EXTERNAL FETCH--------------------->
-<script>
-function getHome() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/yalecc/home.php",
-//  data: "", 
-dataType: "json", success: function(home) 
-{document.getElementById("resultsHome").innerHTML=home.home;}
-});
-}
-</script>  
-
-
-<script type="text/javascript">getHome();</script>
-<div id="resultsHome">
-
-<!------------------in case there is no internet connection----------------------->
+	
+	
+<!-----for external home---->	
+	
+<div data-role="content">	
 
 
 
-   
-		
- <!-- slider -->
+	 <!-- slider -->
     <div class="slider-outer">
     	<div class="slider-container">
 			<div id="camera_wrap">
 	
 	
  
-<div data-src='slideshow/outside.jpg'>
+<div data-src='http://web4uonline.com/yalecc/slideshow/outside.jpg'>
 <div class='camera_caption fadeFromRight'>Welcome to St. Thomas More</div>
 </div>
 
-<div data-src='slideshow/inside.jpg'>
+<div data-src='http://web4uonline.com/yalecc/slideshow/inside.jpg'>
 <div class='camera_caption fadeFromRight'>Student Center</div>
 </div>
 
-<div data-src='slideshow/windows.jpg'>
+<div data-src='http://web4uonline.com/yalecc/slideshow/windows.jpg'>
 <div classx='camera_caption fadeFromRight'></div>
 </div>
 
-<div data-src='slideshow/logo.jpg'>
+<div data-src='http://web4uonline.com/yalecc/slideshow/logo.jpg'>
 <div classx='camera_caption fadeFromRight'></div>
 </div>
 
@@ -227,45 +198,52 @@ dataType: "json", success: function(home)
         <br class="clear" />
 	</div><!-- /slider -->  
 	
+	
+	
 	 	<div data-role="header" data-theme="a"> 
 	<div class="pagetitle">Saint Thomas More</div> 
 </div> 
     
 	<div class="shadow1box">
-		<img src="assets/images/shadow1.png" class="shadow1" alt="shadow">
+		<img src="../25/assets/images/shadow1.png" class="shadow1" alt="shadow">
 	</div>
 	
 	 
     
-    <div class="content">    
+    <div class="content-padd">    
     
 
-Many parts of this app require an internet connection. You can enjoy the prayers section while you hunt down a wireless signal.
+ 
 
-  <div style="height:20px;"></div>
+  
 <!-- navigation -->
 		<ul data-role="listview" data-inset="true" id="listview" style="margin-bottom:0px">
+
+
 			 
-<li><a href='#prayers' data-transition='none' data-prefetch>Prayers</a></li>
+<li><a href='#sunday' data-prefetch='false' data-transition='none'>This Sunday</a></li>
+<li><a href='#prayers' data-transition='none' data-prefetch='false'>Prayers</a></li>
+<li><a href='#news' data-transition='none' data-prefetch='false'>News & Events</a></li>
     </ul>
+       
+<p></p> 
         
-        <div class="shadow2boxx">
-			<img src="assets/images/shadow2.png" class="shadow2" alt="shadow"></div>
- <!-- /navigation -- > 
+ <!-- /navigation --> 
    
     
-	</div><!-- /content padd -->
-	</div><!-- /content -->    
+	
+	
+<!---for external home---->	
+	
+	
+	
+</div><!----?-------->
+	
+	
+	
 
 
-
-
-<!-------------------------end no internet content-------------------------------->
-
-</div>
-<!----------------------END EXTERNALFETCH--------------------->
-
-
+	</div><!-- /content -->  
 
 
     
@@ -283,11 +261,16 @@ Many parts of this app require an internet connection. You can enjoy the prayers
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 
 
+
+
+
+
+
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 <!--/////////////////////////////////////All Page Navigation/////////////////////////////////////////-->			
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 <div data-role="page" id="navigation2" data-theme="a">
-	<script src="inc-header.js"></script>
+	<script src="../25/inc-header.js"></script>
 	
 	
 <!----------------------BEGIN EXTERNAL FETCH--------------------->
@@ -323,12 +306,14 @@ function getNavigation() {
 <!--/////////////////////////////////////END All Navigation/////////////////////////////////////////-->			
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 
+
+
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 <!--/////////////////////////////////////FAITH FORMATION NAV/////////////////////////////////////////-->			
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 
 <div data-role="page" id="faith" data-theme="a">
-<script src="inc-header.js"></script>
+<script src="../25/inc-header.js"></script>
 
 <!----------------------BEGIN EXTERNAL FETCH--------------------->
 <script>
@@ -354,21 +339,22 @@ dataType: "json", success: function(faith)
 </div><!-- /page -->
 
 
+
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 <!--/////////////////////////////////////END FAITH FORMATION NAV/////////////////////////////////////////-->			
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 
 
-
-
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////SUNDAY/////////////////////////////////////////-->			
+<!--/////////////////////////////////////SUNDAY NAV/////////////////////////////////////////-->			
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 
 <div data-role="page" id="sunday" data-theme="a">
-<script src="inc-header.js"></script>
+<script src="../25/inc-header.js"></script>
 
-<!----------------------BEGIN EXTERNAL FETCH--------------------->
+
+
+<!----------------------BEGIN EXTERNAL FETCH-------------------- ->
 <script>
 function getSunday() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/yalecc/sunday.php",
 //  data: "", 
@@ -382,26 +368,34 @@ dataType: "json", success: function(sunday)
 <script type="text/javascript">getSunday();</script>
 <div id="resultsSunday">getting data...internet connection required</div>
 <!----------------------END EXTERNALFETCH--------------------->
+
+
   	   
 	
 	<!-- footer -->
 <script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
 	<!-- /footer -->
 
-	
-</div><!-- /page -->
+
+
+
+</div><!--end page-->
 
 
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////END Sunday/////////////////////////////////////////-->			
+<!--/////////////////////////////////////END Sunday NAV/////////////////////////////////////////-->			
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+
 
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 <!--////////////////////////////////////MEDIA NAV/////////////////////////////////////////-->			
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 
 <div data-role="page" id="media" data-theme="a">
-<script src="inc-header.js"></script>
+<script src="../25/inc-header.js"></script>
 
 <!----------------------BEGIN EXTERNAL FETCH--------------------->
 <script>
@@ -433,14 +427,13 @@ dataType: "json", success: function(media)
 
 
 
-
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 <!--/////////////////////////////////////NEWS & EVENTS/////////////////////////////////////////-->			
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 
 <div data-role="page" id="news" data-theme="a">
 	  
-  <script src="inc-header.js"></script>  
+  <script src="../25/inc-header.js"></script>  
     
       
 <!----------------------BEGIN EXTERNAL FETCH--------------------->
@@ -491,7 +484,7 @@ function getNews() {
 
 <div data-role="page" id="schedule" data-theme="a">
 	  
-<script src="inc-header.js"></script>
+<script src="../25/inc-header.js"></script>
   
             
 <!----------------------BEGIN EXTERNAL FETCH--------------------->
@@ -544,7 +537,7 @@ function getSchedule() {
 
 <div data-role="page" id="contact" data-theme="a">
 	  
-  <script src="inc-header.js"></script>
+  <script src="../25/inc-header.js"></script>
   
             
             
@@ -600,7 +593,7 @@ function getContact() {
 
 <div data-role="page" id="alumni" data-theme="a">
 	  
-  <script src="inc-header.js"></script>
+  <script src="../25/inc-header.js"></script>
   
             
             
@@ -656,7 +649,7 @@ function getalumni() {
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 
 <div data-role="page" id="donate" data-theme="a">
-<script src="inc-header.js"></script>
+<script src="../25/inc-header.js"></script>
 <!----------------------BEGIN EXTERNAL FETCH--------------------->
 <script>
 function getDonate() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/yalecc/donate.php",
@@ -689,7 +682,7 @@ dataType: "json", success: function(donate)
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 
 <div data-role="page" id="reflection" data-theme="a">
-<script src="inc-header.js"></script>
+<script src="../25/inc-header.js"></script>
 <!----------------------BEGIN EXTERNAL FETCH--------------------->
 <script>
 function getReflection() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/yalecc/reflection.php",
@@ -723,7 +716,7 @@ dataType: "json", success: function(reflection)
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 
 <div data-role="page" id="songs" data-theme="a">
-<script src="inc-header.js"></script>
+<script src="../25/inc-header.js"></script>
 <!----------------------BEGIN EXTERNAL FETCH--------------------->
 <script>
 function getmusic() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/yalecc/music.php",
@@ -756,7 +749,7 @@ dataType: "json", success: function(music)
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 
 <div data-role="page" id="announcements" data-theme="a">
-<script src="inc-header.js"></script>
+<script src="../25/inc-header.js"></script>
 <!----------------------BEGIN EXTERNAL FETCH--------------------->
 <script>
 function getannouncements() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/yalecc/announcements.php",
@@ -823,7 +816,7 @@ dataType: "json", success: function(secondCollection)
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 
 <div data-role="page" id="orderMass" data-theme="a">
-<script src="inc-header.js"></script>
+<script src="../25/inc-header.js"></script>
 <!----------------------BEGIN EXTERNAL FETCH--------------------->
 <script>
 function getorderMass() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/yalecc/orderMass.php",
@@ -861,7 +854,7 @@ dataType: "json", success: function(orderMass)
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 
 <div data-role="page" id="guideConfession" data-theme="a">
-<script src="inc-header.js"></script>
+<script src="../25/inc-header.js"></script>
  
        
 <!----------------------BEGIN EXTERNAL FETCH--------------------->
@@ -900,7 +893,7 @@ dataType: "json", success: function(examination)
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 
 <div data-role="page" id="retreat" data-theme="a">
-<script src="inc-header.js"></script>
+<script src="../25/inc-header.js"></script>
  
        
 <!----------------------BEGIN EXTERNAL FETCH--------------------->
@@ -939,7 +932,7 @@ dataType: "json", success: function(retreat)
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 
 <div data-role="page" id="biblestudy" data-theme="a">
-<script src="inc-header.js"></script> 
+<script src="../25/inc-header.js"></script> 
    
 <!----------------------BEGIN EXTERNAL FETCH--------------------->
 <script>
@@ -968,7 +961,7 @@ dataType: "json", success: function(biblestudy)
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 
 <div data-role="page" id="extra1" data-theme="a">
-<script src="inc-header.js"></script> 
+<script src="../25/inc-header.js"></script> 
    
 <!----------------------BEGIN EXTERNAL FETCH--------------------->
 <script>
@@ -1000,7 +993,7 @@ dataType: "json", success: function(extra1)
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 
 <div data-role="page" id="perks" data-theme="a"> 
-<script src="inc-header.js"></script>
+<script src="../25/inc-header.js"></script>
  
        
 <!----------------------BEGIN EXTERNAL FETCH--------------------->
@@ -1040,7 +1033,7 @@ dataType: "json", success: function(perks)
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 
 <div data-role="page" id="sponsors" data-theme="a"> 
-<script src="inc-header.js"></script>
+<script src="../25/inc-header.js"></script>
  
        
 <!----------------------BEGIN EXTERNAL FETCH--------------------->
@@ -1080,7 +1073,7 @@ dataType: "json", success: function(sponsors)
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 
 <div data-role="page" id="app" data-theme="a"> 
-<script src="inc-header.js"></script>
+<script src="../25/inc-header.js"></script>
  
        
 <!----------------------BEGIN EXTERNAL FETCH--------------------->
@@ -1122,16 +1115,16 @@ dataType: "json", success: function(app)
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 
 <div data-role="page" id="prayers" data-theme="a">
-<script src="inc-header.js"></script>
+<script src="../25/inc-header.js"></script>
  
 
 <div data-role="content">
     
-    <!-- banner & title -->
+    <!-- banner & title --
 	<div class="bannerContainer">
 		<img src="http://www.web4uonline.com/tops/praying.jpg" class="banner">	
     </div>
-  	
+  	-->
   	
   		<div data-role="header" data-theme="a"> 
 			<div class="pagetitle">Prayers</div> 
@@ -1140,7 +1133,8 @@ dataType: "json", success: function(app)
 
   	
   	
-        <div class="shadow1box"><img src="assets/images/shadow1.png" class="shadow1" alt="shadow"></div>
+        <div class="shadow1box">
+			<img src="../25/assets/images/shadow1.png" class="shadow1" alt="shadow"></div>
 	<!-- /banner & title -->
     
     <div class="content-padd">
@@ -1556,7 +1550,6 @@ It is by dying that one awakens to Eternal Life.
 
 
 
-</div><!--end hider div--->
 
 </body>
 </html>
