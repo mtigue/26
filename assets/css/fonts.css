@@ -1,0 +1,109 @@
+﻿@font-face {
+  font-family: 'Kaushan Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Kaushan Script'), local('KaushanScript-Regular'), url(fonts/qx1LSqts-NtiKcLw4N03IFhlQWQpSCpzb2Peu3I-Q34.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster'), url(fonts/MWVf-Rwh4GLQVBEwbyI61Q.woff) format('woff');
+}
+
+
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cabin Regular'), local('Cabin-Regular'), url(fonts/JEgmtEDzc-IH8jBshQXrYA.woff) format('woff');
+  
+}
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Cabin Bold'), local('Cabin-Bold'), url(fonts/haOjnueK8Or1ztuuRtr8dvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+
+
+@font-face {
+  font-family: 'Goudy Bookletter 1911';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Goudy Bookletter 1911'), local('GoudyBookletter1911'), url(fonts/l5lwlGTN3pEY5Bf-rQEuIMvsW7MYFVYsuLRj6jSUyb0.woff) format('woff');
+}
+
+
+
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Crimson Text'), local('CrimsonText-Roman'), url(fonts/3IFMwfRa07i-auYR-B-zNXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Crimson Text Semibold'), local('CrimsonText-Semibold'), url(fonts/rEy5tGc5HdXy56Xvd4f3I9Od4RnLmtUrdSQkDmC5b8k.woff) format('woff');
+}
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Crimson Text Bold Italic'), local('CrimsonText-BoldItalic'), url(fonts/4j4TR-EfnvCt43InYpUNDL0qgHI2SEqiJszC-CVc3gY.woff) format('woff');
+}
+
+
+
+
+@font-face {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cardo'), local('Cardo-Regular'), url(fonts/zpisC4kGu76S5N9VhpMnEg.woff) format('woff');
+}
+@font-face {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Cardo Bold'), local('Cardo-Bold'), url(fonts/gHC1KgRPdVNdvvVcxLMCY_esZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+
+
+
+
+@font-face {
+  font-family: 'Droid Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Serif'), local('DroidSerif'), url(fonts/0AKsP294HTD-nvJgucYTaIbN6UDyHWBl620a-IRfuBk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Droid Serif';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Droid Serif Bold'), local('DroidSerif-Bold'), url(fonts/QQt14e8dY39u-eYBZmppwTqR_3kx9_hJXbbyU8S6IN0.woff) format('woff');
+}
+@font-face {
+  font-family: 'Droid Serif';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Droid Serif Bold Italic'), local('DroidSerif-BoldItalic'), url(fonts/c92rD_x0V1LslSFt3-QEpgRV2F9RPTaqyJ4QibDfkzM.woff) format('woff');
+}
+
+
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Sans'), local('DroidSans'), url(fonts/s-BiyweUPV0v-yRb-cjciBsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+}
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Droid Sans Bold'), local('DroidSans-Bold'), url(fonts/EFpQQyG9GqCrobXxL-KRMQFhaRv2pGgT5Kf0An0s4MM.woff) format('woff');
+}
