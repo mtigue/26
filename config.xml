@@ -117,7 +117,7 @@
 
 <!------plugins--->
     
-    
+   
     <gap:plugin name="com.phonegap.plugins.childbrowser" />
     <gap:plugin name="com.adobe.plugins.pushplugin" /> 
     
