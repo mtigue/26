@@ -16,7 +16,6 @@ window.onload = function() {
 
 
 
-
 <!------------BEGIN SITELOADER-------------->
 
 <div id="siteLoader2">
@@ -36,6 +35,17 @@ window.onload = function() {
   </div> 
   
 <!---end siteloader-->    
+
+
+<!--don't use page transition-->    
+    <script>
+    
+    $(document).bind("mobileinit", function(){
+  $.mobile.defaultPageTransition="none"
+});
+<!--don't use page transition-->    
+    
+    </script>
     
     
     
