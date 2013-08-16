@@ -21,11 +21,11 @@ window.onload = function() {
 <div id="siteLoader2">
 
 <div style="position: fixed;
-  top: 40%;
+  top: 45%;
   lefts: 50%; width:100%; text-align:center;
   margin-tops: -125px;
   margin-lefts: -64px;
-  background-color:#10242f;">
+  background-color:#10242f !important;">
   
   
   
@@ -122,7 +122,53 @@ $("div.ui-collapsible-set").live("expand", function(e) {
 
 </script>
 	
-      
+    
+
+<!----scripts to speed things up / scroll to top----------------->
+<script>
+
+$(":jqmData(role='collapsible')", $.mobile.activePage).click(function(e) {
+    if (! $(this).hasClass('ui-collapsible-heading-collapsed')) {
+        $.mobile.silentScroll($(this).offset().top);
+    }
+});
+
+
+</script>
+
+<script>
+	
+	// make collapsible items scroll to top on open
+	$("div.ui-collapsible-set").live("expand", function(e) {
+    var top = $(e.target).offset().top;
+        if ($(window).scrollTop() > top)
+            $(window).scrollTop(top);
+});
+		
+	</script>
+
+
+       
+<script>
+	
+	//attempts to speed things up
+	$.mobile.defaultPageTransition   = 'none';
+	$.mobile.defaultDialogTransition = 'none';
+	$.mobile.buttonMarkup.hoverDelay = 0;
+	$document.bind("touchstart", function(event){});
+
+</script>
+
+	
+<!-------------------------------------------------->
+
+
+
+
+
+
+
+  
 </head>
 <body style="background-color:#10242f;">
 
