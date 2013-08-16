@@ -3,7 +3,9 @@
 
 b {font-weight:normal !important; }
 
-body, .pagebg, .content {background-image:url('img2/texture.jpg') !Important; background-repeat:repeat !Important; }
+body 
+
+.pagebg {background-image:url('img2/texture.jpg') !Important; background-repeat:repeat !Important; }
 
 
 h3.home-title  {margin:-10px 0px 15px 0px; }
