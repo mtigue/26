@@ -39,12 +39,26 @@ window.onload = function() {
     
     
     
-    
-    
+    <script src="assets/js/jquery-1.8.2.min.js"></script>
+    <script src="assets/js/jquery.mobile-1.3.0.min.js"></script>
+    	<script src="assets/js/screen.js"></script>
+	<script src="assets/js/apprise-1.5.min.js"></script> 
+	
+	
+	<script src="readinglink.js"></script>
+	
+ 
+	<script src="web4u.js"></script> 
+	
+<script src="http://www.web4uonline.com/yalecc/web4u-out.js"></script> 
+
+
     
     
     
     <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png"/>
+    
+    
     
     <script>
 		if (window.screen.height==568) { // iPhone 4"
@@ -64,19 +78,8 @@ window.onload = function() {
     <link rel="stylesheet" href="yale.css"><!--themerollser theme---> 
     <link rel="stylesheet" href="web4u.css"> 
     <link rel="stylesheet" href="http://www.web4uonline.com/yalecc/web4u-out.css">
-
-    <!-- scripts -->
-    <script src="assets/js/jquery-1.8.2.min.js"></script>
-	<script src="assets/js/jquery.mobile-1.3.0.min.js"></script>
-	<script src="assets/js/screen.js"></script>
-	<script src="assets/js/apprise-1.5.min.js"></script> 
-	
-	
-	<script src="readinglink.js"></script>
-	<script src="inc-sundayReadings.js"></script> 	
- 
-	<script src="web4u.js"></script> 
-	<script src="http://www.web4uonline.com/yalecc/web4u-out.js"></script> 
+  
+    
 
 
 	<script src="phonegap.js"></script>
@@ -85,33 +88,7 @@ window.onload = function() {
 
 <script>
 
- // Get all checked checkboxes
-  
-    
-  
-                                $('#getChecked').tap(function(){
-                                
-                         
-                           
-                           			$.mobile.changePage("#guide");
-
-									var text = $('textarea#textArea').val().replace('\r\n', '<br />');;
-
-                                    var selectedChk = '';
-                                    $("div#first :checkbox:checked").each(function() {
-                                        selectedChk += $(this).val()+"<p>";
-                                    });
-                                    
-                                    
-                                    var element=document.getElementById("sinArea");
-									element.innerHTML=selectedChk + "<p>" + text;
-									
-								
-										
-										
-
-                                }); // end get checked
-                                
+                              
                                 
                                 
                                 
@@ -165,46 +142,12 @@ $("div.ui-collapsible-set").live("expand", function(e) {
 	<!-- /slider -->
 	
 	
-<!-----for external home---->	
-	<div data-role="content">
-		
-		
-		
-		
- <!-- slider -->
-    <div class="slider-outer">
-    	<div class="slider-container">
-			<div id="camera_wrap">
-	
-	
- 
-<div data-src='http://web4uonline.com/yalecc/slideshow/outside.jpg'>
-<div class='camera_caption fadeFromRight'>Welcome to St. Thomas More</div>
-</div>
-
-<div data-src='http://web4uonline.com/yalecc/slideshow/inside.jpg'>
-<div class='camera_caption fadeFromRight'>Student Center</div>
-</div>
-
-<div data-src='http://web4uonline.com/yalecc/slideshow/windows.jpg'>
-<div classx='camera_caption fadeFromRight'></div>
-</div>
-
-<div data-src='http://web4uonline.com/yalecc/slideshow/logo.jpg'>
-<div classx='camera_caption fadeFromRight'></div>
-</div>
-
-	                              
-            
-     		</div><!--end camera-wrap-->
-		</div><!---end slider container-->
-        <br class="clear" />
-	</div><!-- /slider -->  
+<script src="http://web4uonline.com/yalecc/slideshow.js"></script>	
 	
 	
 	
 	 	<div data-role="header" data-theme="a"> 
-	<div class="pagetitle">Saint Thomas More</div> 
+	<div class="pagetitle">Saint Thomas More Chapel</div> 
 </div> 
     
 	<div class="shadow1box">
@@ -215,18 +158,36 @@ $("div.ui-collapsible-set").live("expand", function(e) {
     
     <div class="content-padd">    
     
+<script src="http://web4uonline.com/yalecc/homemessage.js"></script>
 
- 
 
+<a href="#extra1">Extra Page 1</a>		
+<a href="#extra2">Extra Page 2</a>	
+<a href="#extra3">Extra Page 3</a>	
+<a href="#extra4">Extra Page 4</a>	 <br>
+  
+  <a href="#extra5">Extra Page 5</a>	
+  <a href="#extra6">Extra Page 6</a>	
+  <a href="#extra7">Extra Page 7</a>	
   
 <!-- navigation -->
 		<ul data-role="listview" data-inset="true" id="listview" style="margin-bottom:0px">
 
 
-			 
-<li><a href='#sunday' data-prefetch data-transition='none'>This Sunday</a></li>
-<li><a href='#prayers' data-transition='none' data-prefetch>Prayers</a></li>
-<li><a href='#news' data-transition='none' data-prefetch data-ajax=false'>News & Events</a></li>
+
+
+	<script src="http://web4uonline.com/yalecc/homenav.js"></script>		 
+
+
+
+
+
+
+
+
+
+
+
     </ul>
         
         
@@ -255,6 +216,260 @@ $("div.ui-collapsible-set").live("expand", function(e) {
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 <!--/////////////////////////////////////HOME PAGE/////////////////////////////////////////-->			
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////SUNDAY/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="sunday" data-theme="a">
+<script src="inc-header.js"></script>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+</head>
+
+<div data-role="content">
+  
+     <script src="http://www.web4uonline.com/yalecc/sunday.js"></script>
+    
+    
+    
+	</div><!-- /content -->  	 
+	<!-- footer -->
+<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
+	<!-- /footer -->
+</div><!-- /page -->
+
+
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////END Sunday/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////SCHEDULE/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<div data-role="page" id="schedule" data-theme="a">
+	  
+<script src="inc-header.js"></script>
+  
+            
+<!----------------------BEGIN EXTERNAL FETCH--------------------->
+
+<script>
+
+function getSchedule() { 
+
+ $.ajax({
+  type: "GET",
+  
+  cache: false, 	
+  url: "http://web4uonline.com/yalecc/schedule.php",
+//  data: "", 
+   dataType: "json",
+  success: function(schedule) 
+  {
+ document.getElementById("resultsSchedule").innerHTML=schedule.schedule;  
+  }
+  
+  
+});
+
+}
+
+</script>  
+
+<script type="text/javascript">getSchedule();</script>
+
+<div id="resultsSchedule">getting data...internet connection required</div>
+
+ 
+ <!----------------------END EXTERNALFETCH--------------------->
+	
+	
+	<!-- footer -->
+<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>  
+	<!-- /footer -->
+	
+</div><!-- /page -->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////END SCHEDULE/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////BEGIN MASS TIMES/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<div data-role="page" id="mass" data-theme="a">
+	  
+<script src="inc-header.js"></script>
+
+<div data-role="content">
+    
+    <!-- banner & title -->
+	<div class="bannerContainer">
+		<img src="http://www.web4uonline.com/yalecc/tops/mass.jpg" class="banner">	
+    </div>
+    
+    
+  	
+  		  	<div data-role="header" data-theme="a"> 
+			<div class="pagetitle">Mass Times</div> 
+			</div> 
+
+
+    
+
+
+    <div class="shadow1box"><img src="assets/images/shadow1.png" class="shadow1" alt="shadow"></div>
+	<!-- /banner & title -->
+    
+    <div class="content-padd" >
+     
+
+  
+            
+<!----------------------BEGIN EXTERNAL FETCH--------------------->
+
+<script>
+
+function getmass() { 
+
+ $.ajax({
+  type: "GET",
+  
+  cache: false, 	
+  url: "http://web4uonline.com/yalecc/mass.php",
+//  data: "", 
+   dataType: "json",
+  success: function(mass) 
+  {
+ document.getElementById("resultsmass").innerHTML=mass.mass;  
+  }
+  
+  
+});
+
+}
+
+</script>  
+
+<script type="text/javascript">getmass();</script>
+
+<div id="resultsmass">getting data...internet connection required</div>
+
+ 
+ <!----------------------END EXTERNALFETCH--------------------->
+	    </div><!-- /content padd -->
+	</div><!-- /content -->
+
+	
+	<!-- footer -->
+<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
+	<!-- /footer -->
+	
+</div><!-- /page -->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////END MASS TIMES/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////CONTACT/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<div data-role="page" id="contact" data-theme="a">
+	  
+  <script src="inc-header.js"></script>
+  
+  <div data-role="content">
+    
+    <!-- banner & title -->
+		
+
+  	  	
+  		  	<div data-role="header" data-theme="a"> 
+			<div class="pagetitle">Contact</div> 
+			</div> 
+
+
+  	
+  	
+  	
+        <div class="shadow1box"><img src="assets/images/shadow1.png" class="shadow1" alt="shadow"></div>
+	<!-- /banner & title -->
+    
+    <div class="content-padd">
+
+  
+            
+            
+<!----------------------BEGIN EXTERNAL FETCH--------------------->
+
+<script>
+
+function getContact() { 
+
+ $.ajax({
+  type: "GET",
+  
+  cache: false, 	
+  url: "http://web4uonline.com/yalecc/contact.php",
+//  data: "", 
+   dataType: "json",
+  success: function(contact) 
+  {
+ document.getElementById("resultsContact").innerHTML=contact.contact;  
+  }
+  
+  
+});
+
+}
+
+</script>  
+
+
+<script type="text/javascript">getContact();</script>
+
+<div id="resultsContact">getting data...internet connection required</div>
+
+</div><!-- /content padd -->
+	</div><!-- /content -->
+
+ 
+ <!----------------------END EXTERNALFETCH--------------------->
+            
+    	
+	<!-- footer -->
+<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
+	<!-- /footer -->
+
+	
+</div><!-- /page -->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////CONTACT/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+
+
 
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 <!--/////////////////////////////////////NEWS & EVENTS/////////////////////////////////////////-->			
@@ -310,48 +525,6 @@ function getNews() {
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 
 
-
-
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////SUNDAY/////////////////////////////////////////-->			
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-
-<div data-role="page" id="sunday" data-theme="a">
-<script src="inc-header.js"></script>
-
-<div data-role="content">
-
-<!----------------------BEGIN EXTERNAL FETCH--------------------->
-<script>
-function getSunday() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/yalecc/sunday.php",
-//  data: "", 
-dataType: "json", success: function(sunday) 
-{document.getElementById("resultsSunday").innerHTML=sunday.sunday;
-
-}
-});
-}
-</script>  
-
-
-<script type="text/javascript">getSunday();</script>
-<div id="resultsSunday">getting data...internet connection required</div>
-<!----------------------END EXTERNALFETCH--------------------->
-  	   
-	
-	<!-- footer -->
-<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
-	<!-- /footer -->
-
-
-
-</div>	<!--end data role content-->
-</div><!-- /page -->
-
-
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////END Sunday/////////////////////////////////////////-->			
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
 
 
 
@@ -491,114 +664,7 @@ dataType: "json", success: function(media)
 
 
 
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////SCHEDULE/////////////////////////////////////////-->			
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
 
-<div data-role="page" id="schedule" data-theme="a">
-	  
-<script src="inc-header.js"></script>
-  
-            
-<!----------------------BEGIN EXTERNAL FETCH--------------------->
-
-<script>
-
-function getSchedule() { 
-
- $.ajax({
-  type: "GET",
-  
-  cache: false, 	
-  url: "http://web4uonline.com/yalecc/schedule.php",
-//  data: "", 
-   dataType: "json",
-  success: function(schedule) 
-  {
- document.getElementById("resultsSchedule").innerHTML=schedule.schedule;  
-  }
-  
-  
-});
-
-}
-
-</script>  
-
-<script type="text/javascript">getSchedule();</script>
-
-<div id="resultsSchedule">getting data...internet connection required</div>
-
- 
- <!----------------------END EXTERNALFETCH--------------------->
-	
-	
-	<!-- footer -->
-<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
-	<!-- /footer -->
-	
-</div><!-- /page -->
-
-
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////END SCHEDULE/////////////////////////////////////////-->			
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////CONTACT/////////////////////////////////////////-->			
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-
-<div data-role="page" id="contact" data-theme="a">
-	  
-  <script src="inc-header.js"></script>
-  
-            
-            
-<!----------------------BEGIN EXTERNAL FETCH--------------------->
-
-<script>
-
-function getContact() { 
-
- $.ajax({
-  type: "GET",
-  
-  cache: false, 	
-  url: "http://web4uonline.com/yalecc/contact.php",
-//  data: "", 
-   dataType: "json",
-  success: function(contact) 
-  {
- document.getElementById("resultsContact").innerHTML=contact.contact;  
-  }
-  
-  
-});
-
-}
-
-</script>  
-
-
-<script type="text/javascript">getContact();</script>
-
-<div id="resultsContact">getting data...internet connection required</div>
-
- 
- <!----------------------END EXTERNALFETCH--------------------->
-            
-    	
-	<!-- footer -->
-<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
-	<!-- /footer -->
-
-	
-</div><!-- /page -->
-
-
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////CONTACT/////////////////////////////////////////-->			
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
 
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 <!--/////////////////////////////////////ALUMNI/////////////////////////////////////////-->			
@@ -987,7 +1053,7 @@ dataType: "json", success: function(extra1)
 </script>  
 
 <script type="text/javascript">getextra1();</script>
-<div id="resultextra1">getting data...internet connection required</div>
+<div id="resultsextra1">getting data...internet connection required</div>
 <!----------------------END EXTERNALFETCH--------------------->
    <!-- footer -->
 <script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
@@ -997,6 +1063,171 @@ dataType: "json", success: function(extra1)
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 <!--/////////////////////////////////////END EXTRA 1/////////////////////////////////////////-->			
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////EXTRA 2/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<div data-role="page" id="extra2" data-theme="a">
+<script src="inc-header.js"></script> 
+   
+<!----------------------BEGIN EXTERNAL FETCH--------------------->
+<script>
+function getextra2() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/yalecc/extra2.php",
+//  data: "", 
+dataType: "json", success: function(extra2) 
+{document.getElementById("resultsextra2").innerHTML=extra2.extra2;}
+});
+}
+</script>  
+
+<script type="text/javascript">getextra2();</script>
+<div id="resultsextra2">getting data...internet connection required</div>
+<!----------------------END EXTERNALFETCH--------------------->
+   <!-- footer -->
+<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
+	<!-- /footer -->
+</div><!-- /page -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////END EXTRA 2/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////EXTRA 3/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<div data-role="page" id="extra3" data-theme="a">
+<script src="inc-header.js"></script> 
+   
+<!----------------------BEGIN EXTERNAL FETCH--------------------->
+<script>
+function getextra3() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/yalecc/extra3.php",
+//  data: "", 
+dataType: "json", success: function(extra3) 
+{document.getElementById("resultsextra3").innerHTML=extra3.extra3;}
+});
+}
+</script>  
+
+<script type="text/javascript">getextra3();</script>
+<div id="resultsextra3">getting data...internet connection required</div>
+<!----------------------END EXTERNALFETCH--------------------->
+   <!-- footer -->
+<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
+	<!-- /footer -->
+</div><!-- /page -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////END EXTRA 3/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////EXTRA 4/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<div data-role="page" id="extra4" data-theme="a">
+<script src="inc-header.js"></script> 
+   
+<!----------------------BEGIN EXTERNAL FETCH--------------------->
+<script>
+function getextra4() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/yalecc/extra4.php",
+//  data: "", 
+dataType: "json", success: function(extra4) 
+{document.getElementById("resultsextra4").innerHTML=extra4.extra4;}
+});
+}
+</script>  
+
+<script type="text/javascript">getextra4();</script>
+<div id="resultsextra4">getting data...internet connection required</div>
+<!----------------------END EXTERNALFETCH--------------------->
+   <!-- footer -->
+<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
+	<!-- /footer -->
+</div><!-- /page -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////END EXTRA 4/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////EXTRA 5/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////END EXTRA 5/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="extra5" data-theme="a">
+<script src="inc-header.js"></script>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+</head>
+
+<div data-role="content">
+  
+     <script src="http://www.web4uonline.com/yalecc/extra5.js"></script>
+    
+	</div><!-- /content -->  	 
+	<!-- footer -->
+<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
+	<!-- /footer -->
+</div><!-- /page -->
+
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////EXTRA 6/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="extra6" data-theme="a">
+<script src="inc-header.js"></script>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+</head>
+
+<div data-role="content">
+  
+     <script src="http://www.web4uonline.com/yalecc/extra6.js"></script>
+    
+	</div><!-- /content -->  	 
+	<!-- footer -->
+<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
+	<!-- /footer -->
+</div><!-- /page -->
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////END EXTRA 6/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////EXTRA 6/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<div data-role="page" id="extra7" data-theme="a">
+<script src="inc-header.js"></script>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+</head>
+
+<div data-role="content">
+  
+     <script src="http://www.web4uonline.com/yalecc/extra7.js"></script>
+    
+	</div><!-- /content -->  	 
+	<!-- footer -->
+<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
+	<!-- /footer -->
+</div><!-- /page -->
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////END EXTRA 6/////////////////////////////////////////-->			
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+
 
 
 
@@ -1122,85 +1353,6 @@ dataType: "json", success: function(app)
 
 
 
-
-
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////SUNDAY READINGS/////////////////////////////////////////-->			
-<!--///////////////////////////////////////////////////////////////////////////////////////--
-
-<div data-role="page" id="sundayReadings" data-theme="a">
-<script src="inc-header.js"></script>
- 
-<!----------------------BEGIN EXTERNAL FETCH---------------------
-<script>
-function getSundayReadings() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/yalecc/sundayReadings.php",
-//  data: "", 
-dataType: "json", success: function(sundayReadings) 
-{document.getElementById("resultsSundayReadings").innerHTML=sundayReadings.sundayReadings;}
-});
-}
-</script>  
-
-
-<script type="text/javascript">getSundayReadings();</script>
-<div id="resultsSundayReadings">getting data...internet connection required</div>
-<!----------------------END EXTERNALFETCH--------------------->
- 
- 
-	
-	<!-- footer --
-<script src="http://www.web4uonline.com/newman/app/inc-footer.js"></script>
-	<!-- /footer --
-
-	
-</div><!-- /page -->
-
-
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////END SUNDAY READINGS/////////////////////////////////////////-->			
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-
-
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////TODAY READINGS/////////////////////////////////////////-->			
-<!--///////////////////////////////////////////////////////////////////////////////////////--
-
-<div data-role="page" id="todayReadings" data-theme="a">
-<script src="inc-header.js"></script>
- 
-<!----------------------BEGIN EXTERNAL FETCH---------------------
-<script>
-function gettodayReadings() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/yalecc/todayReadings.php",
-//  data: "", 
-dataType: "json", success: function(todayReadings) 
-{document.getElementById("resultstodayReadings").innerHTML=todayReadings.todayReadings;}
-});
-}
-</script>  
-
-
-<script type="text/javascript">gettodayReadings();</script>
-<div id="resultstodayReadings">getting data...internet connection required</div>
-<!----------------------END EXTERNALFETCH--------------------->
- 
- 
-	
-	<!-- footer --
-<script src="http://www.web4uonline.com/newman/app/inc-footer.js"></script>
-	<!-- /footer --
-
-	
-</div><!-- /page -->
-
-
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////END TODAY READINGS/////////////////////////////////////////-->			
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-
-              
-
-
-
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 <!--/////////////////////////////////////PRAYERS/////////////////////////////////////////-->			
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
@@ -1211,11 +1363,7 @@ dataType: "json", success: function(todayReadings)
 
 <div data-role="content">
     
-    <!-- banner & title --
-	<div class="bannerContainer">
-		<img src="http://www.web4uonline.com/tops/praying.jpg" class="banner">	
-    </div>
-  	-->
+   
   	
   		<div data-role="header" data-theme="a"> 
 			<div class="pagetitle">Prayers</div> 
@@ -1242,15 +1390,15 @@ dataType: "json", success: function(todayReadings)
 <h3>Our Father</h3>
 					
 <p>		
-				Our Father, Who art in heaven, 
-Hallowed be Thy Name. 
-Thy Kingdom come. 
-Thy Will be done, on earth as it is in Heaven. Give us this day our daily bread. 
-And forgive us our trespasses, 
-as we forgive those who trespass against us.
-And lead us not into temptation,
-but deliver us from evil. Amen.	
-</p>			
+Our Father who art in heaven, <br>
+Hallowed be thy name.  <br>
+Thy kingdom come. <br>
+Thy will be done on earth, as it is in heaven. <br>
+Give us this day our daily bread, <br>
+and forgive us our trespasses, <br>
+as we forgive those who trespass against us, <br>
+and lead us not into temptation, <br>
+but deliver us from evil.</p>			
 </div><!--end Our father-->					
 					
 
@@ -1260,8 +1408,8 @@ but deliver us from evil. Amen.
 					
 <p>						
 Hail Mary,
-Full of Grace,
-The Lord is with thee.
+full of Grace,
+the Lord is with thee.
 Blessed art thou among women,
 and blessed is the fruit
 of thy womb, Jesus.
@@ -1705,10 +1853,176 @@ It is by dying that one awakens to Eternal Life.
 <!--////////////////////////////////////END PAGES///////////////////////////////////////////-->
 
 
+<!--plugin scripts-->
+    
+<script src="childbrowser.js"></script>
 
 
 
 
+<!--------------------------------------FOR PUSH------------------------------------->
+	
+   <!--<script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"></script>-->
+        
+      
+        <script type="text/javascript" src="PushNotification.js"></script>
+        <script src="pushwoosh.js" type="text/javascript"></script>
+        
+        <script type="text/javascript">
+            var pushNotification;
+            
+            function onDeviceReady() {
+                $("#app-status-ul").append('<li>deviceready event received</li>');
+                
+				document.addEventListener("backbutton", function(e)
+				{
+                	$("#app-status-ul").append('<li>backbutton event received</li>');
+  					
+      				if( $("#home").length > 0)
+					{
+						// call this to get a new token each time. don't call it to reuse existing token.
+						//pushNotification.unregister(successHandler, errorHandler);
+						e.preventDefault();
+						navigator.app.exitApp();
+					}
+					else
+					{
+						navigator.app.backHistory();
+					}
+				}, false);
+
+				try 
+				{ 
+                	pushNotification = window.plugins.pushNotification;
+                	if (device.platform == 'android' || device.platform == 'Android') {
+						$("#app-status-ul").append('<li>registering android</li>');
+						
+						
+						
+                    	pushNotification.register(successHandler, errorHandler, {"senderID":"659620956030","ecb":"onNotificationGCM"});		// required!
+					} else {
+						$("#app-status-ul").append('<li>registering iOS</li>');
+                    	pushNotification.register(tokenHandler, errorHandler, {"badge":"true","sound":"true","alert":"true","ecb":"onNotificationAPN"});	// required!
+                	}
+                }
+				catch(err) 
+				{ 
+					txt="There was an error on this page.\n\n"; 
+					txt+="Error description: " + err.message + "\n\n"; 
+					alert(txt); 
+				} 
+            }
+            
+            // handle APNS notifications for iOS
+            function onNotificationAPN(e) {
+                if (e.alert) {
+                     $("#app-status-ul").append('<li>push-notification: ' + e.alert + '</li>');
+                     navigator.notification.alert(e.alert);
+                }
+                    
+                if (e.sound) {
+                    var snd = new Media(e.sound);
+                    snd.play();
+                }
+                
+                if (e.badge) {
+                    pushNotification.setApplicationIconBadgeNumber(successHandler, e.badge);
+                }
+            }
+            
+            // handle GCM notifications for Android
+            
+
+///////////////////////////////////PUSHWOOSH FOR ANDROID/////////////////////////////////////////////////////            
+            
+          // handle GCM notifications for Android
+ function onNotificationGCM(e) {
+     switch( e.event )
+     {
+         case 'registered':
+         if ( e.regid.length > 0 )
+         {
+             // Your GCM push server needs to know the regID before it can push to this device
+             // here is where you might want to send it the regID for later use.
+             PushWoosh.appCode = "F37D6-69E23";
+             PushWoosh.register(e.regid, function(data) {
+                     //    alert("PushWoosh register success: " + JSON.stringify(data));
+                     }, function(errorregistration) {
+                     //    alert("Push Connection Error" +  errorregistration);
+                     });
+ 
+         }
+         break;                    
+///////////////////////////////////PUSHWOOSH FOR ANDROID/////////////////////////////////////////////////////                      
+                    
+                    case 'message':
+                    	// if this flag is set, this notification happened while we were in the foreground.
+                    	// you might want to play a sound to get the user's attention, throw up a dialog, etc.
+                    	if (e.foreground)
+                    	{
+							$("#app-status-ul").append('<li>--INLINE NOTIFICATION--' + '</li>');
+
+							// if the notification contains a soundname, play it.
+							var my_media = new Media("/android_asset/www/"+e.soundname);
+							my_media.play();
+						}
+						else
+						{	// otherwise we were launched because the user touched a notification in the notification tray.
+							if (e.coldstart)
+								$("#app-status-ul").append('<li>--COLDSTART NOTIFICATION--' + '</li>');
+							else
+							$("#app-status-ul").append('<li>--BACKGROUND NOTIFICATION--' + '</li>');
+						}
+
+						$("#app-status-ul").append('<li>MESSAGE -> MSG: ' + e.payload.message + '</li>');
+						$("#app-status-ul").append('<li>MESSAGE -> MSGCNT: ' + e.payload.msgcnt + '</li>');
+                    break;
+                    
+                    case 'error':
+						$("#app-status-ul").append('<li>ERROR -> MSG:' + e.msg + '</li>');
+                    break;
+                    
+                    default:
+						$("#app-status-ul").append('<li>EVENT -> Unknown, an event was received and we do not know what it is</li>');
+                    break;
+                }
+            }
+     
+/////////////////////////////////PUSHWOOSH INSERT FOR APPLE //////////////////////////////////////////
+       
+            function tokenHandler (result) {
+               
+                // Your iOS push server needs to know the token before it can push to this device
+                // here is where you might want to send it the token for later use.
+               PushWoosh.appCode = "F37D6-69E23";
+    		PushWoosh.register(result, function(data) {
+                    //    alert("PushWoosh register success: " + JSON.stringify(data));
+                    }, function(errorregistration) {
+                    //    alert("Couldn't register with PushWoosh" +  errorregistration);
+                    });
+                    
+            }         
+                    
+/////////////////////////////////PUSHWOOSH INSERT FOR APPLE //////////////////////////////////////////                
+                
+           
+
+            function successHandler (result) {
+                $("#app-status-ul").append('<li>success:'+ result +'</li>');
+            }
+            
+            function errorHandler (error) {
+                $("#app-status-ul").append('<li>error:'+ error +'</li>');
+            }
+            
+			document.addEventListener('deviceready', onDeviceReady, true);
+
+         </script>  
+  
+
+
+
+<!---------------------------------------END PUSH--------------------------------------->
 
 
 

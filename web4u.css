@@ -7,6 +7,7 @@ body, .pagebg, .content {background-image:url('img2/texture.jpg') !Important; ba
 
 h3.home-title  {margin:-10px 0px 15px 0px; }
 
+h5 {margin:0px 0px 0px 0px;}
 
 .slider-container { 
 	width:100%; 
@@ -291,5 +292,20 @@ border:0px; overflow:hidden;
 .guide-section h3 {font-size:1.1em; font-weight:bold; color:#666666; margin:0px 0px 0px 0px !important; }
 
 
+.camera_caption > div { 
+	text-align:center;     
+	padding: 10px 0; 
+	background: rgba(0,0,0,.5); 
+	color: #fff; 
+	text-shadow: 0 -1px 0 rgba(0,0,0,.3); 
+	font-size: 16px; 
+	line-height: 18px; 
+	
+	font-family:Georgia, "Times New Roman", Times, serif; font-size:16px; font-weight:bold;
+	text-shadow:2px 2px 2px #333333 !important;
+	/* font-family: 'Lobster', cursive; font-size:17px;  */
+ 	/* font-family: 'Cardo', serif; font-size:16px; */
+ 	/* font-family: 'Droid Sans', sans-serif; font-size:16px */
+}
 
 

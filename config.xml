@@ -83,17 +83,7 @@
     <gap:splash src="res/screen/android/480x800.png"  gap:platform="android" gap:density="hdpi" />
     <gap:splash src="res/screen/android/720x1280.png" gap:platform="android" gap:density="xhdpi" />
   
-<!--  hide landscape b/c it was being called even in portrait mode
-    <gap:splash src="res/screen/android/screen-ldpi-landscape.png"  gap:platform="android" gap:density="ldpi" />
-    <gap:splash src="res/screen/android/screen-mdpi-landscape.png"  gap:platform="android" gap:density="mdpi" />
-    <gap:splash src="res/screen/android/screen-hdpi-landscape.png"  gap:platform="android" gap:density="hdpi" />
-    <gap:splash src="res/screen/android/screen-xhdpi-landscape.png" gap:platform="android" gap:density="xhdpi" />
-   --> 
     
- <!--hide blackberry and windows--   
-    <gap:splash src="res/screen/blackberry/screen-225.png"         gap:platform="blackberry" />
-    <gap:splash src="res/screen/windows-phone/screen-portrait.jpg" gap:platform="winphone" />
---->
 
 
 <!-------------APPLE------->
@@ -110,7 +100,7 @@
 
 <!-- IPAD Landscape -->
 <gap:splash src="res/screen/ios/2048x1496.png" gap:platform="ios" width="2048" height="1496" />
-<gap:splash src="res/screen/ios/1024x768.png" gap:platform="ios" width="1024" height="768" />
+<gap:splash src="res/screen/ios/1024x748.png" gap:platform="ios" width="1024" height="748" />
 
 <!--------END APPLE---------------->
 
