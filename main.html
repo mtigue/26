@@ -38,65 +38,30 @@ window.onload = function() {
 <!---end siteloader-->    
 
 
-    
-    <script src="assets/js/jquery-1.8.2.min.js"></script>
-    <script src="assets/js/jquery.mobile-1.3.0.min.js"></script>
-    	<script src="assets/js/screen.js"></script>
-	<script src="assets/js/apprise-1.5.min.js"></script> 
-	
-	
-	<script src="readinglink.js"></script>
-	
- 
-	<script src="web4u.js"></script> 
-	
-<script src="http://www.web4uonline.com/yalecc/web4u-out.js"></script> 
-
-
-    
-    
-    <!--
-    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png"/>
-    -->
-    
-    
-   <!-- 
-    <script>
-		if (window.screen.height==568) { // iPhone 4"
-		document.querySelector("meta[name=viewport]").content="width=320.1";
-		}
-    </script>
-    -->
-    
-    <!--
-    <meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	-->
-    
-    <!-- css -->
+ <!-- css -->
     <link rel="stylesheet" href="jquery.mobile-1.3.0.min.css" />
-   <link rel="stylesheet" href="assets/css/style1.css">
- <!--    <link rel="stylesheet" href="assets/css/apprise.min.css" />  -->
-    <link rel="stylesheet" href="assets/css/fonts.css">
-    
-    
+    <link rel="stylesheet" href="assets/css/style1.css">
+	<link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="yale.css"><!--themerollser theme---> 
     <link rel="stylesheet" href="web4u.css"> 
     <link rel="stylesheet" href="http://www.web4uonline.com/yalecc/web4u-out.css">
   
-    
 
+
+<!-----js------>
+    <script src="assets/js/jquery-1.8.2.min.js"></script>
+    <script src="assets/js/jquery.mobile-1.3.0.min.js"></script>
+    <script src="assets/js/screen.js"></script>
+	
+	<script src="readinglink.js"></script>
+	<script src="web4u.js"></script> 
+	<script src="http://www.web4uonline.com/yalecc/web4u-out1.js"></script> 
 
 	<script src="phonegap.js"></script>
+    <script src="childbrowser.js"></script>
+    
 
-
-
-
-
-                              
-                                
-                                
-                                
+    
     
 
 <!----scripts to speed things up / scroll to top----------------->
@@ -136,13 +101,6 @@ $(":jqmData(role='collapsible')", $.mobile.activePage).click(function(e) {
 
 	
 <!-------------------------------------------------->
-
-
-
-
-
-
-
   
 </head>
 <body style="background-color:#10242f;">
@@ -160,17 +118,13 @@ $(":jqmData(role='collapsible')", $.mobile.activePage).click(function(e) {
 	<img style='margin:0px 6px -6px 0px;' src='img2/logo.png'>STM Yale</div>
 </div>
 
-   
-
-
-
 	<!-- slider -->
 	<script>
 		jQuery(function(){
 			jQuery('#camera_wrap').camera({	
 					
 				loader				: 'false',
-				navigation			: true,
+				navigation			: false,
 				navigationHover		: false,
 				fx					: 'scrollRight'	
 		
@@ -180,11 +134,43 @@ $(":jqmData(role='collapsible')", $.mobile.activePage).click(function(e) {
 	<!-- /slider -->
 	
 	
-<script src="http://web4uonline.com/yalecc/slideshow.js"></script>	
 	
 	
 	
-	 	<div data-role="header" data-theme="a"> 
+<!-- slider -->
+    <div class="slider-outer">
+    	<div class="slider-container">
+			<div id="camera_wrap" id="slideshow">
+	
+	
+ 
+<div data-src='slideshow/outside.jpg' id="slide1">
+<div class='camera_caption fadeFromRight font'>Saint Thomas More Chapel</div>
+</div>
+
+<div data-src='slideshow/inside.jpg' id="slide2">
+<div class='camera_caption fadeFromRight'>The Thomas E. Golden, Jr. Center</div>
+</div>
+
+<div data-src='slideshow/windows.jpg' id="slide3">
+<div class='camera_caption fadeFromRight'>The Meditation Room</div>
+
+</div>
+
+<div data-src='slideshow/logo.jpg' id="slide4">
+<div classx='camera_caption fadeFromRight'></div>
+</div>
+
+	                              
+            
+     		</div><!--end camera-wrap-->
+		</div><!---end slider container-->
+        <br class="clear" />
+	</div><!-- /slider -->  
+	
+	
+	
+	 	<div data-role="header" data-theme="a" id="hometitle"> 
 	<div class="pagetitle">Saint Thomas More Chapel</div> 
 </div> 
     
@@ -192,7 +178,6 @@ $(":jqmData(role='collapsible')", $.mobile.activePage).click(function(e) {
 		<img src="assets/images/shadow1.png" class="shadow1" alt="shadow">
 	</div>
 	
-	 
     
     <div class="content-padd">    
     
@@ -203,39 +188,30 @@ $(":jqmData(role='collapsible')", $.mobile.activePage).click(function(e) {
 <!-- navigation -->
 		<ul data-role="listview" data-inset="true" id="listview" style="margin-bottom:0px">
 
-
-
-
-	<script src="http://web4uonline.com/yalecc/homenav.js"></script>		 
-
-
-
-
-
-
-
-
-
-
+	<script src="http://web4uonline.com/yalecc/homenav.js"></script>
+	
+	
+			
 
     </ul>
-        
+    
+    
+	
+
         
  <!-- /navigation --> 
  
  
-</div><!-- /content padd -->
-</div><!-- /content role-->        
+</div><!--content padd -->
+
    
 	
 	
 <!---for external home---->	
 	
-	
-
     
 <!-- footer -->
-<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
+<script src="inc-footer.js"></script>
 <!-- /footer -->
 
 
@@ -254,19 +230,40 @@ $(":jqmData(role='collapsible')", $.mobile.activePage).click(function(e) {
 <div data-role="page" id="sunday" data-theme="a" class="pagebg">
 <script src="inc-header.js"></script>
 
-<head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-</head>
-
 <div data-role="content">
+
+	<div class="bannerContainer" id="sundayphoto">
+		<img src="tops/sunday.jpg" class="banner">	
+    </div>
+  	
+  
+  		  	<div data-role="header" data-theme="a" id="sundaytitle"> 
+			<div class="pagetitle">This Sunday</div> 
+			</div> 
+
+  	
+  	
+  	
+        <div class="shadow1box"><img src="assets/images/shadow1.png" class="shadow1" alt="shadow"></div>
+    
+    
+    
+    <div class="content-padd">
+    
+    
+    <div id="sundayholder">
+    This content from this page requires an internet connection.
+    </div>
   
      <script src="http://www.web4uonline.com/yalecc/sunday.js"></script>
     
     
     
+    </div><!--content padd-->
+    
 	</div><!-- /content -->  	 
 	<!-- footer -->
-<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
+<script src="inc-footer.js"></script>
 	<!-- /footer -->
 </div><!-- /page -->
 
@@ -278,9 +275,6 @@ $(":jqmData(role='collapsible')", $.mobile.activePage).click(function(e) {
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 
 
-
-
-
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 <!--/////////////////////////////////////SCHEDULE/////////////////////////////////////////-->			
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
@@ -288,6 +282,32 @@ $(":jqmData(role='collapsible')", $.mobile.activePage).click(function(e) {
 <div data-role="page" id="schedule" data-theme="a" class="pagebg">
 	  
 <script src="inc-header.js"></script>
+  
+<div data-role="content">
+    
+    <!-- banner & title --
+	<div class="bannerContainer">
+		<img src="tops/windows.jpg" class="banner">	
+    </div>
+    <!-->
+    
+  	
+  		  	<div data-role="header" data-theme="a"> 
+			<div class="pagetitle">Weekly Schedule</div> 
+			</div> 
+
+
+    
+
+
+    <div class="shadow1box"><img src="assets/images/shadow1.png" class="shadow1" alt="shadow"></div>
+	<!-- /banner & title -->
+    
+    <div class="content-padd" >
+  
+  
+  
+  
   
             
 <!----------------------BEGIN EXTERNAL FETCH--------------------->
@@ -317,14 +337,20 @@ function getSchedule() {
 
 <script type="text/javascript">getSchedule();</script>
 
-<div id="resultsSchedule">getting data...internet connection required</div>
+<div id="resultsSchedule">The content for this page requires an internet connection.</div>
+
+
+
+
+    </div><!-- /content padd -->
+	</div><!-- /content -->
 
  
  <!----------------------END EXTERNALFETCH--------------------->
 	
 	
 	<!-- footer -->
-<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>  
+<script src="inc-footer.js"></script>  
 	<!-- /footer -->
 	
 </div><!-- /page -->
@@ -348,14 +374,14 @@ function getSchedule() {
 <div data-role="content">
     
     <!-- banner & title -->
-	<div class="bannerContainer">
-		<img src="http://www.web4uonline.com/yalecc/tops/mass.jpg" class="banner">	
+	<div class="bannerContainer" id="massphoto">
+		<img src="tops/mass.jpg" class="banner">	
     </div>
     
     
   	
-  		  	<div data-role="header" data-theme="a"> 
-			<div class="pagetitle">Mass Times</div> 
+  		  	<div data-role="header" data-theme="a" id="masstitle"> 
+			<div class='pagetitle'>Mass Times</div> 
 			</div> 
 
 
@@ -406,7 +432,7 @@ function getmass() {
 
 	
 	<!-- footer -->
-<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
+<script src="inc-footer.js"></script>
 	<!-- /footer -->
 	
 </div><!-- /page -->
@@ -431,7 +457,7 @@ function getmass() {
 		
 
   	  	
-  		  	<div data-role="header" data-theme="a"> 
+  		  	<div data-role="header" data-theme="a" id="contacttitle"> 
 			<div class="pagetitle">Contact</div> 
 			</div> 
 
@@ -485,7 +511,7 @@ function getContact() {
             
     	
 	<!-- footer -->
-<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
+<script src="inc-footer.js"></script>
 	<!-- /footer -->
 
 	
@@ -497,10 +523,6 @@ function getContact() {
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 
 
-
-
-
-
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 <!--/////////////////////////////////////NEWS & EVENTS/////////////////////////////////////////-->			
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
@@ -510,6 +532,23 @@ function getContact() {
 <div data-role="page" id="news" data-theme="a" class="pagebg">
 	  
   <script src="inc-header.js"></script>  
+    
+   <!-- banner & title -->
+	<div class="bannerContainer" id="newsphoto">
+		<img src="tops/events.jpg" class="banner">	
+    </div>
+  	
+  	 	
+  		  	<div data-role="header" data-theme="a" id="newstitle"> 
+			<div class="pagetitle">News & Events</div> 
+			</div> 
+
+  	
+        <div class="shadow1box"><img src="assets/images/shadow1.png" class="shadow1" alt="shadow"></div>
+	<!-- /banner & title -->
+    
+    <div class="content-padd">
+   
     
       
 <!----------------------BEGIN EXTERNAL FETCH--------------------->
@@ -540,10 +579,13 @@ function getNews() {
 <script type="text/javascript">getNews();</script>
 <div id="resultsNews">getting data...internet connection required</div>
  <!----------------------END EXTERNALFETCH--------------------->
+
+
+    </div><!--content padd -->
 	
 	
 <!-- footer -->
-<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
+<script src="inc-footer.js"></script>
 <!-- /footer -->
 
 
@@ -554,19 +596,6 @@ function getNews() {
 <!--/////////////////////////////////////END NEWS & EVENTS/////////////////////////////////////////-->			
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 <!--/////////////////////////////////////All Page Navigation/////////////////////////////////////////-->			
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
@@ -574,6 +603,14 @@ function getNews() {
 	<script src="inc-header.js"></script>
 
 <div data-role="content">
+
+	
+        <div class="shadow1box">
+        <img src="assets/images/shadow1.png" class="shadow1" alt="shadow">
+        </div>
+	<!-- /banner & title -->
+    
+    <div class="content-padd">
 	
 <!----------------------BEGIN EXTERNAL FETCH--------------------->
 <script>
@@ -597,10 +634,19 @@ function getNavigation() {
 <script type="text/javascript">getNavigation();</script>
 <div id="resultsNavigation">getting data...internet connection required</div>
 <!----------------------END EXTERNALFETCH--------------------->
+
+
+
+
+
+</div><!-- /content padd -->
+	</div><!-- /content -->
+	
+
 	
 	
 <!-- footer -->
-<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
+<script src="inc-footer.js"></script>
 <!-- /footer -->	
 
 
@@ -621,6 +667,28 @@ function getNavigation() {
 <div data-role="page" id="faith" data-theme="a" class="pagebg">
 <script src="inc-header.js"></script>
 
+
+<div data-role="content">
+    
+    <!-- banner & title -->
+ 
+   
+	<div class="bannerContainer" id="faithphoto">
+		<img src="tops/girl2.jpg" class="banner">	
+    </div>
+  	
+  	  	<div data-role="header" data-theme="a" id="faithtitle"> 
+	<div class="pagetitle">Faith & Prayer</div> 
+</div> 
+
+  	
+        <div class="shadow1box"><img src="assets/images/shadow1.png" class="shadow1" alt="shadow"></div>
+	<!-- /banner & title -->
+    
+    <div class="content-padd">
+
+
+
 <!----------------------BEGIN EXTERNAL FETCH--------------------->
 <script>
 function getfaith() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/yalecc/faith.php",
@@ -636,12 +704,24 @@ dataType: "json", success: function(faith)
 
 
 <script type="text/javascript">getfaith();</script>
-<div id="resultsfaith">getting data...internet connection required</div>
+<div id="resultsfaith">
+
+<ul class='ui-listview' data-filter-theme='d' data-filter-placeholder='Search...' data-filter='false' data-role='listview' data-inset='true'>
+
+ <li><a href="#prayers" data-transition="none">Prayers</a></li>
+
+</ul>
+</div>
+
+
+
 <!----------------------END EXTERNALFETCH--------------------->
-  	   
+
+</div>
+</div>  	   
 	
 	<!-- footer -->
-<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
+<script src="inc-footer.js"></script>
 	<!-- /footer -->
 
 	
@@ -655,14 +735,26 @@ dataType: "json", success: function(faith)
 
 
 
-
-
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 <!--////////////////////////////////////MEDIA NAV/////////////////////////////////////////-->			
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 
 <div data-role="page" id="media" data-theme="a" class="pagebg">
 <script src="inc-header.js"></script>
+
+<div data-role="content">
+    
+ 
+  	  	<div data-role="header" data-theme="a" id="mediatitle"> 
+	<div class="pagetitle">Catholic Media Links</div> 
+</div> 
+
+
+     <div class="shadow1box"><img src="assets/images/shadow1.png" class="shadow1" alt="shadow"></div>
+	<!-- /banner & title -->
+    
+    <div class="content-padd">
+
 
 <!----------------------BEGIN EXTERNAL FETCH--------------------->
 <script>
@@ -676,12 +768,16 @@ dataType: "json", success: function(media)
 
 
 <script type="text/javascript">getmedia();</script>
-<div id="resultsmedia">getting data...internet connection required</div>
+<div id="resultsmedia">Internet connection required.</div>
 <!----------------------END EXTERNALFETCH--------------------->
+
+</div><!-- /content padd -->
+</div><!-- /content-->    
+
   	   
 	
 	<!-- footer -->
-<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
+<script src="inc-footer.js"></script>
 	<!-- /footer -->
 
 	
@@ -704,6 +800,25 @@ dataType: "json", success: function(media)
 	  
   <script src="inc-header.js"></script>
   
+  <div data-role="content">
+    
+    <!-- banner & title -->
+	<div class="bannerContainer" id="alumniphoto">
+		<img src="tops/alumni3.jpg" class="banner">	
+    </div>
+  	
+  	
+  	  	
+  		  	<div data-role="header" data-theme="a" id="alumnititle"> 
+			<div class="pagetitle">Alumni</div> 
+			</div> 
+
+  	
+  	
+        <div class="shadow1box"><img src="assets/images/shadow1.png" class="shadow1" alt="shadow"></div>
+	<!-- /banner & title -->
+    
+    <div class="content-padd">
             
             
 <!----------------------BEGIN EXTERNAL FETCH--------------------->
@@ -738,10 +853,15 @@ function getalumni() {
 
  
  <!----------------------END EXTERNALFETCH--------------------->
-            
+           
+
+ </div><!-- /content padd -->
+	</div><!-- /content -->
+
+ 
     	
 	<!-- footer -->
-<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
+<script src="inc-footer.js"></script>
 	<!-- /footer -->
 
 	
@@ -753,38 +873,6 @@ function getalumni() {
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 
 
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////DONATE/////////////////////////////////////////-->			
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-
-<div data-role="page" id="donate" data-theme="a" class="pagebg">
-<script src="inc-header.js"></script>
-<!----------------------BEGIN EXTERNAL FETCH--------------------->
-<script>
-function getDonate() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/yalecc/donate.php",
-//  data: "", 
-dataType: "json", success: function(donate) 
-{document.getElementById("resultsDonate").innerHTML=donate.donate;}
-});
-}
-</script>  
-
-
-<script type="text/javascript">getDonate();</script>
-<div id="resultsDonate">getting data...internet connection required</div>
-<!----------------------END EXTERNALFETCH--------------------->
- 
-	  
-	<!-- footer -->
-<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
-	<!-- /footer -->
-	
-</div><!-- /page -->
-
-
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////END DONATE/////////////////////////////////////////-->			
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
 
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 <!--/////////////////////////////////////PASTOR's REFLECTION/////////////////////////////////////////-->			
@@ -792,6 +880,28 @@ dataType: "json", success: function(donate)
 
 <div data-role="page" id="reflection" data-theme="a" class="pagebg">
 <script src="inc-header.js"></script>
+
+<div data-role="content">
+    
+    <!-- banner & title -->
+		<div class="bannerContainer" id="reflectionphoto">
+		<img src="tops/sunday.jpg" class="banner">	
+    </div>
+
+
+  		<div data-role="header" data-theme="a" id="reflectiontitle"> 
+			<div class="pagetitle">SCC Commentary & Questions</div> 
+</div>
+
+  	
+  	
+        <div class="shadow1box"><img src="assets/images/shadow1.png" class="shadow1" alt="shadow"></div>
+	<!-- /banner & title -->
+
+
+<div class="content-padd">
+
+
 <!----------------------BEGIN EXTERNAL FETCH--------------------->
 <script>
 function getReflection() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/yalecc/reflection.php",
@@ -804,12 +914,18 @@ dataType: "json", success: function(reflection)
 
 
 <script type="text/javascript">getReflection();</script>
-<div id="resultsReflection">getting data...internet connection required</div>
+<div id="resultsReflection">This content for this page requires an internet connection.</div>
 <!----------------------END EXTERNALFETCH--------------------->
+
+
+	
+    </div><!-- /content padd -->
+	</div><!-- /content -->
+
  
 	  
 	<!-- footer -->
-<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
+<script src="inc-footer.js"></script>
 	<!-- /footer -->
 	
 </div><!-- /page -->
@@ -821,103 +937,83 @@ dataType: "json", success: function(reflection)
 
 
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////////SONGS/////////////////////////////////////////-->			
+<!--/////////////////////////////////////////DONATE/////////////////////////////////////////-->			
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 
-<div data-role="page" id="songs" data-theme="a" class="pagebg">
+<div data-role="page" id="donate" data-theme="a" class="pagebg">
 <script src="inc-header.js"></script>
+
+<div data-role="content" >
+    
+    <!-- banner & title -->
+	<div class="bannerContainer" id="donatephoto">
+		<img src="tops/inside.jpg" class="banner">	
+    </div>
+  	
+	<div data-role="header" data-theme="a" id="donatetitle"> 
+			<div class="pagetitle">Donate</div> 
+			</div> 
+
+
+  	
+  	
+  	
+        <div class="shadow1box"><img src="assets/images/shadow1.png" class="shadow1" alt="shadow"></div>
+	<!-- /banner & title -->
+    
+    <div class="content-padd">
+    
+    
+    
+
+
 <!----------------------BEGIN EXTERNAL FETCH--------------------->
 <script>
-function getmusic() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/yalecc/music.php",
+function getdonate() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/yalecc/donate.php",
 //  data: "", 
-dataType: "json", success: function(music) 
-{document.getElementById("resultsmusic").innerHTML=music.music;}
+dataType: "json", success: function(donate) 
+{document.getElementById("resultsdonate").innerHTML=donate.donate;}
 });
 }
 </script>  
 
 
-<script type="text/javascript">getmusic();</script>
-<div id="resultsmusic">getting data...internet connection required</div>
+<script type="text/javascript">getdonate();</script>
+<div id="resultsdonate">
+
+<p>
+We are grateful for your continued support of this vitally important ministry in our Church. 
+    </p>
+<p>
+Online donations are available when your device is connected to the internet.</p>    
+ 
+ <p>
+      If you have any questions regarding your online donation, please contact Jamie Cappetta directly at (203) 777-5537 ext 128 or e-mail him at 
+	<a href="mailto:jamie.cappetta@yale.edu" target="_blank">jamie.cappetta@yale.edu</a>.
+      </p>
+   
+    
+    
+    </div>
 <!----------------------END EXTERNALFETCH--------------------->
  
+ </div><!-- /content padd -->
+	</div><!-- /content -->
+	
+
+	  
 	  
 	<!-- footer -->
-<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
+<script src="inc-footer.js"></script>
 	<!-- /footer -->
 	
 </div><!-- /page -->
 
 
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////SONGS/////////////////////////////////////////-->			
+<!--/////////////////////////////////////END DONATE////////////////////////////////////////-->			
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////////ANNOUCEMENTS/////////////////////////////////////////-->			
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-
-<div data-role="page" id="announcements" data-theme="a" class="pagebg">
-<script src="inc-header.js"></script>
-<!----------------------BEGIN EXTERNAL FETCH--------------------->
-<script>
-function getannouncements() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/yalecc/announcements.php",
-//  data: "", 
-dataType: "json", success: function(announcements) 
-{document.getElementById("resultsannouncements").innerHTML=announcements.announcements;}
-});
-}
-</script>  
-
-
-<script type="text/javascript">getannouncements();</script>
-<div id="resultsannouncements">getting data...internet connection required</div>
-<!----------------------END EXTERNALFETCH--------------------->
- 
-	  
-	<!-- footer -->
-<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
-	<!-- /footer -->
-	
-</div><!-- /page -->
-
-
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////ANNOUNCEMENTS/////////////////////////////////////////-->			
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////////2nd COLLECTION/////////////////////////////////////////-->			
-<!--///////////////////////////////////////////////////////////////////////////////////////--
-
-<div data-role="page" id="secondCollection">
-<script src="http://www.web4uonline.com/newman/app/inc-header.js"></script>
-<!----------------------BEGIN EXTERNAL FETCH---------------------
-<script>
-function getsecondCollection() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/yalecc/secondCollection.php",
-//  data: "", 
-dataType: "json", success: function(secondCollection) 
-{document.getElementById("resultssecondCollection").innerHTML=secondCollection.secondCollection;}
-});
-}
-</script>  
-
-
-<script type="text/javascript">getsecondCollection();</script>
-<div id="resultssecondCollection">getting data...internet connection required</div>
-<!----------------------END EXTERNALFETCH--------------------->
- 
-	  
-	<!-- footer --
-<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
-	<!-- /footer --
-	
-</div><!-- /page -->
-
-
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////2nd COLLECTIOn/////////////////////////////////////////-->			
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
 
 
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
@@ -926,6 +1022,31 @@ dataType: "json", success: function(secondCollection)
 
 <div data-role="page" id="orderMass" data-theme="a" class="pagebg">
 <script src="inc-header.js"></script>
+
+<div data-role="content">
+    
+    <!-- banner & title -->
+		<div class="bannerContainer" id="orderphoto">
+		<img src="tops/sunday.jpg" class="banner">	
+    </div>
+
+
+	<div data-role="header" data-theme="a" id="ordertitle"> 
+			<div class="pagetitle">Order of Mass</div> 
+			</div> 
+
+
+
+
+
+        <div class="shadow1box"><img src="assets/images/shadow1.png" class="shadow1" alt="shadow"></div>
+	<!-- /banner & title -->
+    
+    <div class="content-padd" class="fixTop0">
+
+
+
+
 <!----------------------BEGIN EXTERNAL FETCH--------------------->
 <script>
 function getorderMass() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/yalecc/orderMass.php",
@@ -940,10 +1061,17 @@ dataType: "json", success: function(orderMass)
 <script type="text/javascript">getorderMass();</script>
 <div id="resultsorderMass">getting data...internet connection required</div>
 <!----------------------END EXTERNALFETCH--------------------->
+
+
+
+	
+    </div><!-- /content padd -->
+	</div><!-- /content --> 
+ 
  
 	  
 	<!-- footer -->
-<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
+<script src="inc-footer.js"></script>
 	<!-- /footer -->
 	
 </div><!-- /page -->
@@ -955,15 +1083,30 @@ dataType: "json", success: function(orderMass)
 
 
 
-
-
-
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 <!--/////////////////////////////////////EXAMINATION/////////////////////////////////////////-->			
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 
-<div data-role="page" id="guideConfession" data-theme="a" class="pagebg">
+<div data-role="page" id="examination" data-theme="a" class="pagebg">
 <script src="inc-header.js"></script>
+
+<div data-role="content" data-theme="a">
+    
+    <!-- banner & title -->
+	
+  	
+  		<div data-role="header" data-theme="a" id="examinationtitle"> 
+			<div class="pagetitle">Guide to Confession</div> 
+			</div> 
+
+
+  	
+  	
+        <div class="shadow1box"><img src="assets/images/shadow1.png" class="shadow1" alt="shadow"></div>
+	<!-- /banner & title -->
+    
+    <div class="content-padd">
+
  
        
 <!----------------------BEGIN EXTERNAL FETCH--------------------->
@@ -980,15 +1123,19 @@ dataType: "json", success: function(examination)
 <script type="text/javascript">getexamination();</script>
 <div id="resultsexamination">getting data...internet connection required</div>
 <!----------------------END EXTERNALFETCH--------------------->
-   
+
+
+
+
+</div><!-- /content padd -->
+	</div><!-- /content -->
    
    
    
 	
 	<!-- footer -->
-<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
+<script src="inc-footer.js"></script>
 	<!-- /footer -->
-
 	
 </div><!-- /page -->
 
@@ -997,73 +1144,6 @@ dataType: "json", success: function(examination)
 <!--/////////////////////////////////////EXAMINATION/////////////////////////////////////////-->			
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////RETREAT/////////////////////////////////////////-->			
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-
-<div data-role="page" id="retreat" data-theme="a" class="pagebg">
-<script src="inc-header.js"></script>
- 
-       
-<!----------------------BEGIN EXTERNAL FETCH--------------------->
-<script>
-function getretreat() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/yalecc/retreat.php",
-//  data: "", 
-dataType: "json", success: function(retreat) 
-{document.getElementById("resultsretreat").innerHTML=retreat.retreat;}
-});
-}
-</script>  
-
-
-<script type="text/javascript">getretreat();</script>
-<div id="resultsretreat">getting data...internet connection required</div>
-<!----------------------END EXTERNALFETCH--------------------->
-   
-   
-   
-   
-	
-	<!-- footer -->
-<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
-	<!-- /footer -->
-
-	
-</div><!-- /page -->
-
-
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////END RETREAT/////////////////////////////////////////-->			
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////BIBLE STUDY/////////////////////////////////////////-->			
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-
-<div data-role="page" id="biblestudy" data-theme="a" class="pagebg">
-<script src="inc-header.js"></script> 
-   
-<!----------------------BEGIN EXTERNAL FETCH--------------------->
-<script>
-function getbiblestudy() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/yalecc/biblestudy.php",
-//  data: "", 
-dataType: "json", success: function(biblestudy) 
-{document.getElementById("resultsbiblestudy").innerHTML=biblestudy.biblestudy;}
-});
-}
-</script>  
-
-<script type="text/javascript">getbiblestudy();</script>
-<div id="resultsbiblestudy">getting data...internet connection required</div>
-<!----------------------END EXTERNALFETCH--------------------->
-   <!-- footer -->
-<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
-	<!-- /footer -->
-</div><!-- /page -->
-
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////END BIBLE STUDY/////////////////////////////////////////-->			
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
 
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 <!--/////////////////////////////////////EXTRA 1/////////////////////////////////////////-->			
@@ -1071,6 +1151,26 @@ dataType: "json", success: function(biblestudy)
 
 <div data-role="page" id="extra1" data-theme="a" class="pagebg">
 <script src="inc-header.js"></script> 
+
+<div data-role="content">
+    
+    <!-- banner & title -->
+	<div class="bannerContainer" id="extra1photo">
+		<img src="tops/alumni2.jpg" class="banner">	
+    </div>
+  	 	
+  	  	
+  		  	<div data-role="header" data-theme="a" id="extra1title"> 
+			<div class="pagetitle">Extra 1</div> 
+			</div> 
+
+  	
+  	
+        <div class="shadow1box"><img src="assets/images/shadow1.png" class="shadow1" alt="shadow"></div>
+	<!-- /banner & title -->
+    
+    <div class="content-padd">
+
    
 <!----------------------BEGIN EXTERNAL FETCH--------------------->
 <script>
@@ -1085,8 +1185,21 @@ dataType: "json", success: function(extra1)
 <script type="text/javascript">getextra1();</script>
 <div id="resultsextra1">getting data...internet connection required</div>
 <!----------------------END EXTERNALFETCH--------------------->
+
+
+
+
+	
+    </div><!-- /content padd -->
+	</div><!-- /content -->
+
+
+
+
+
+
    <!-- footer -->
-<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
+<script src="inc-footer.js"></script>
 	<!-- /footer -->
 </div><!-- /page -->
 
@@ -1100,6 +1213,25 @@ dataType: "json", success: function(extra1)
 
 <div data-role="page" id="extra2" data-theme="a" class="pagebg">
 <script src="inc-header.js"></script> 
+<div data-role="content">
+    
+    <!-- banner & title -->
+	<div class="bannerContainer" id="extra2photo">
+		<img src="tops/alumni2.jpg" class="banner">	
+    </div>
+  	
+  	
+  	  	
+  		  	<div data-role="header" data-theme="a" id="extra2title"> 
+			<div class="pagetitle">Extra 2</div> 
+			</div> 
+
+  	
+  	
+        <div class="shadow1box"><img src="assets/images/shadow1.png" class="shadow1" alt="shadow"></div>
+	<!-- /banner & title -->
+    
+    <div class="content-padd">
    
 <!----------------------BEGIN EXTERNAL FETCH--------------------->
 <script>
@@ -1114,8 +1246,15 @@ dataType: "json", success: function(extra2)
 <script type="text/javascript">getextra2();</script>
 <div id="resultsextra2">getting data...internet connection required</div>
 <!----------------------END EXTERNALFETCH--------------------->
+
+
+
+    </div><!-- /content padd -->
+	</div><!-- /content -->
+
+
    <!-- footer -->
-<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
+<script src="inc-footer.js"></script>
 	<!-- /footer -->
 </div><!-- /page -->
 
@@ -1144,7 +1283,7 @@ dataType: "json", success: function(extra3)
 <div id="resultsextra3">getting data...internet connection required</div>
 <!----------------------END EXTERNALFETCH--------------------->
    <!-- footer -->
-<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
+<script src="inc-footer.js"></script>
 	<!-- /footer -->
 </div><!-- /page -->
 
@@ -1174,17 +1313,12 @@ dataType: "json", success: function(extra4)
 <div id="resultsextra4">getting data...internet connection required</div>
 <!----------------------END EXTERNALFETCH--------------------->
    <!-- footer -->
-<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
+<script src="inc-footer.js"></script>
 	<!-- /footer -->
 </div><!-- /page -->
 
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 <!--/////////////////////////////////////END EXTRA 4/////////////////////////////////////////-->			
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-
-
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////EXTRA 5/////////////////////////////////////////-->			
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 
 
@@ -1206,7 +1340,7 @@ dataType: "json", success: function(extra4)
     
 	</div><!-- /content -->  	 
 	<!-- footer -->
-<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
+<script src="inc-footer.js"></script>
 	<!-- /footer -->
 </div><!-- /page -->
 
@@ -1228,7 +1362,7 @@ dataType: "json", success: function(extra4)
     
 	</div><!-- /content -->  	 
 	<!-- footer -->
-<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
+<script src="inc-footer.js"></script>
 	<!-- /footer -->
 </div><!-- /page -->
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
@@ -1251,94 +1385,11 @@ dataType: "json", success: function(extra4)
     
 	</div><!-- /content -->  	 
 	<!-- footer -->
-<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
+<script src="inc-footer.js"></script>
 	<!-- /footer -->
 </div><!-- /page -->
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 <!--/////////////////////////////////////END EXTRA 7/////////////////////////////////////////-->			
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-
-
-
-
-
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////PARISH PERKS/////////////////////////////////////////-->			
-<!--///////////////////////////////////////////////////////////////////////////////////////--
-
-<div data-role="page" id="perks" data-theme="a" class="pagebg"> 
-<script src="inc-header.js"></script>
- 
-       
-<!----------------------BEGIN EXTERNAL FETCH---------------------
-<script>
-function getperks() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/yalecc/perks.php",
-//  data: "", 
-dataType: "json", success: function(perks) 
-{document.getElementById("resultsperks").innerHTML=perks.perks;}
-});
-}
-</script>  
-
-
-<script type="text/javascript">getperks();</script>
-<div id="resultsperks">getting data...internet connection required</div>
-<!----------------------END EXTERNALFETCH--------------------->
-   
-   
-   
-   
-	
-	<!-- footer --
-<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
-	<!-- /footer --
-
-	
-</div><!-- /page -->
-
-
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////END PARISH PERKS//////////////////////////////////-->			
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-
-
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////SPONSORS/////////////////////////////////////////-->			
-<!--///////////////////////////////////////////////////////////////////////////////////////--
-
-<div data-role="page" id="sponsors" data-theme="a" class="pagebg"> 
-<script src="inc-header.js"></script>
- 
-       
-<!----------------------BEGIN EXTERNAL FETCH---------------------
-<script>
-function getsponsors() {$.ajax({type: "GET",cache: false, url: "http://web4uonline.com/yalecc/sponsors.php",
-//  data: "", 
-dataType: "json", success: function(sponsors) 
-{document.getElementById("resultssponsors").innerHTML=sponsors.sponsors;}
-});
-}
-</script>  
-
-
-<script type="text/javascript">getsponsors();</script>
-<div id="resultssponsors">getting data...internet connection required</div>
-<!----------------------END EXTERNALFETCH--------------------->
-   
-   
-   
-   
-	
-	<!-- footer --
-<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
-	<!-- /footer --
-
-	
-</div><!-- /page -->
-
-
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////SPONSORS//////////////////////////////////-->			
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 
                                                     
@@ -1370,7 +1421,7 @@ dataType: "json", success: function(app)
    
 	
 	<!-- footer -->
-<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
+<script src="inc-footer.js"></script>
 	<!-- /footer -->
 
 	
@@ -1398,9 +1449,6 @@ dataType: "json", success: function(app)
   		<div data-role="header" data-theme="a"> 
 			<div class="pagetitle">Prayers</div> 
 			</div> 
-
-
-  	
   	
         <div class="shadow1box">
 			<img src="assets/images/shadow1.png" class="shadow1" alt="shadow"></div>
@@ -1857,7 +1905,7 @@ It is by dying that one awakens to Eternal Life.
    
 	
 	<!-- footer -->
-<script src="http://www.web4uonline.com/yalecc/inc-footer.js"></script>
+<script src="inc-footer.js"></script>
 	<!-- /footer -->
 
 	
@@ -1867,25 +1915,6 @@ It is by dying that one awakens to Eternal Life.
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
 <!--/////////////////////////////////////END PRAYERS/////////////////////////////////////////-->			
 <!--///////////////////////////////////////////////////////////////////////////////////////-->
-
-
-
-
-
-
-
-
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-<!--///////////////////////////////////////////////////////////////////////////////////////-->			
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-<!--///////////////////////////////////////////////////////////////////////////////////////-->
-<!--////////////////////////////////////////////////////////////////////////////////////////-->			
-<!--////////////////////////////////////END PAGES///////////////////////////////////////////-->
-
-
-<!--plugin scripts-->
-    
-<script src="childbrowser.js"></script>
 
 
 
@@ -2055,7 +2084,8 @@ It is by dying that one awakens to Eternal Life.
 <!---------------------------------------END PUSH--------------------------------------->
 
 
-
+<script src="http://www.web4uonline.com/yalecc/web4u-out2.js"></script>
+<link rel="stylesheet" href="http://www.web4uonline.com/yalecc/web4u-out2.css">  
 
 </body>
 </html>

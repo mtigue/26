@@ -23,13 +23,12 @@ if(dd<10){dd='0'+dd} if(mm<10){mm='0'+mm}
 
 // document.write("8 digit code: "+printSunday);
 
-sundayURL = "http://www.universalis.com/" +printSunday+ "/USA.Sunday/jsonpmass.js?callback=universalisCallback";
+// sundayURL = "http://www.universalis.com/" +printSunday+ "/USA.Sunday/jsonpmass.js?callback=universalisCallback";
 
 // document.write("<p>Sunday URL: " +sundayURL);
 
-sundayURL2 = "http://www.universalis.com/" +printSunday+ "/USA.Sunday/mass.htm#texts";
-
-
+sundayURL2 = "http://www.universalis.com/" +printSunday+ "/USA.Sunday/mass.htm#texts"; // with jump to header
+sundayURL3 = "http://www.universalis.com/" +printSunday+ "/USA.Sunday/mass.htm"; // without the jump to the header
 
 
 

@@ -10,7 +10,7 @@ body
 
 h3.home-title  {margin:-10px 0px 15px 0px; }
 
-h5 {margin:0px 0px 0px 0px;}
+.callout h5 {margin:20px 0px 0px 0px !Important;}
 
 .slider-container { 
 	width:100%; 
@@ -106,7 +106,7 @@ input:focus {border:1px solid #CCCCCC !important; border-radius:10px !important;
 	/* background:url(../images/page-backgrounds/paper.jpg) 0 0; background-size: 500px 593px;  */
 	/* background:url(../images/page-backgrounds/farmer.jpg) 0 0; background-size: 349px 349px; */
 	 /* background:url(../images/page-backgrounds/blue-stripes.jpg) 0 0; background-size: 100px 100px; */
-	 background:url(../images/page-backgrounds/texture.jpg) 0 0; background-size: 476px 476px; 
+	// background:url(../images/page-backgrounds/texture.jpg) 0 0; background-size: 476px 476px; 
 	/* background:url(../images/page-backgrounds/white-brick-wall.jpg) 0 0; background-size: 25px 17px; */
 	/* background:url(../images/page-backgrounds/grilled.jpg) 0 0; background-size: 170px 180px;  */
 	/* background:url(../images/page-backgrounds/wood.jpg) 0 0; background-size: 203px 317px; */
@@ -213,7 +213,7 @@ line-height: 1.14em;
 
 
 .callout {background-color:#edecef; border-radius:5px; border:1px solid #CCCCCC; padding:3% 3% 3% 3%; margin-bottom:10px; float:left; width:93%; heights:80px; overflow:hidden;
-line-height: 1.14em; 
+line-height: 1.2em; 
 
  box-shadow: 3px 3px 3px #888888;
 
