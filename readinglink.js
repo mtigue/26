@@ -1,5 +1,6 @@
 ﻿
 
+
 var td = new Date(); 
 
 day = td.getDay();
@@ -19,16 +20,13 @@ var mm = nextSunday.getMonth()+1; //January is 0!
 var yyyy = nextSunday.getFullYear();
 if(dd<10){dd='0'+dd} if(mm<10){mm='0'+mm} 
 
-var printSunday = yyyy+mm+dd;
+ printSunday = yyyy+mm+dd;
 
 // document.write("8 digit code: "+printSunday);
 
-// sundayURL = "http://www.universalis.com/" +printSunday+ "/USA.Sunday/jsonpmass.js?callback=universalisCallback";
+sundayURL = "http://www.universalis.com/" +printSunday+ "/USA.Sunday/jsonpmass.js?callback=universalisCallback";
 
 // document.write("<p>Sunday URL: " +sundayURL);
 
-sundayURL2 = "http://www.universalis.com/" +printSunday+ "/USA.Sunday/mass.htm#texts"; // with jump to header
-sundayURL3 = "http://www.universalis.com/" +printSunday+ "/USA.Sunday/mass.htm"; // without the jump to the header
-
-
-
+sundayURL2 = "http://www.universalis.com/" +printSunday+ "/USA.Sunday/mass.htm#texts";
+sundayURL3 = "http://www.universalis.com/" +printSunday+ "/USA.Sunday/mass.htm";
