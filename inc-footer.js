@@ -4,7 +4,7 @@
 document.write("<li id='footer1'><a href='#faith' id='walk' data-icon='custom'  data-theme='b'  data-transition='none'>Faith</a></li>");
 
 document.write("<li id='footer2'><a href='#sunday' id='table' data-icon='custom'  data-theme='b'   data-transition='none'>Sunday</a></li>");
-document.write("<li id='footer3'><a href='#news' id='calendar' data-icon='custom' data-theme='b'   data-transition='none'>Events</a></li>");
+document.write("<li id='footer3'><a href='#news?=number' id='calendar' data-icon='custom' data-theme='b'   data-transition='none'>Events</a></li>");
 
 document.write("<li id='footer4'><a href='#donate' id='mouse' data-icon='custom' data-theme='b'   data-transition='none'>Donate</a></li>");
 

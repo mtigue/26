@@ -145,11 +145,11 @@ $(":jqmData(role='collapsible')", $.mobile.activePage).click(function(e) {
 	
  
 <div data-src='slideshow/outside.jpg' id="slide1">
-<div class='camera_caption fadeFromRight font'>Saint Thomas More Chapel</div>
+<div class='camera_caption fadeFromRight font'>The Thomas E. Golden, Jr. Center</div>
 </div>
 
 <div data-src='slideshow/inside.jpg' id="slide2">
-<div class='camera_caption fadeFromRight'>The Thomas E. Golden, Jr. Center</div>
+<div class='camera_caption fadeFromRight'>The Courtyard</div>
 </div>
 
 <div data-src='slideshow/windows.jpg' id="slide3">
@@ -309,7 +309,7 @@ $(":jqmData(role='collapsible')", $.mobile.activePage).click(function(e) {
   
   
   
-  
+
   
             
 <!----------------------BEGIN EXTERNAL FETCH--------------------->
@@ -338,6 +338,8 @@ function getSchedule() {
 </script>  
 
 <script type="text/javascript">getSchedule();</script>
+
+<button onclick="getSchedule()" data-icon="refresh" data-transition="none" data-iconpos="right" value="Update Schedule">Update Schedule</button>  
 
 <div id="resultsSchedule">The content for this page requires an internet connection.</div>
 
@@ -377,7 +379,7 @@ function getSchedule() {
     
     <!-- banner & title -->
 	<div class="bannerContainer" id="massphoto">
-		<img src="tops/mass.jpg" class="banner">	
+		<img src="tops/chapel.jpg" class="banner">	
     </div>
     
     
@@ -424,6 +426,8 @@ function getmass() {
 </script>  
 
 <script type="text/javascript">getmass();</script>
+
+<button onclick="getmass()" data-icon="refresh" data-transition="none" data-iconpos="right" value="">Update Mass Times</button>  
 
 <div id="resultsmass">getting data...internet connection required</div>
 
@@ -579,7 +583,15 @@ function getNews() {
 </script>  
 
 <script type="text/javascript">getNews();</script>
+
+ <!--
+<button onclick="getNews()" data-icon="refresh" data-transition="none" data-iconpos="right" value="">Update News & Events</button>  
+-->
+
 <div id="resultsNews">The content for this page requires an internet connection.</div>
+
+ <div style="clear:both;">
+
  <!----------------------END EXTERNALFETCH--------------------->
 
 
@@ -851,6 +863,8 @@ function getalumni() {
 
 <script type="text/javascript">getalumni();</script>
 
+<button onclick="getalumni()" data-icon="refresh" data-transition="none" data-iconpos="right" value="">Update Alumni Page</button>  
+
 <div id="resultsalumni">getting data...internet connection required</div>
 
  
@@ -916,6 +930,10 @@ dataType: "json", success: function(reflection)
 
 
 <script type="text/javascript">getReflection();</script>
+
+<button onclick="getReflection()" data-icon="refresh" data-transition="none" data-iconpos="right" value="">Refresh This Page</button>  
+
+
 <div id="resultsReflection">The content for this page requires an internet connection.</div>
 <!----------------------END EXTERNALFETCH--------------------->
 
@@ -1246,6 +1264,9 @@ dataType: "json", success: function(extra2)
 </script>  
 
 <script type="text/javascript">getextra2();</script>
+
+<button onclick="getextra2()" data-icon="refresh" data-transition="none" data-iconpos="right" value="">Update This Page</button> 
+
 <div id="resultsextra2">getting data...internet connection required</div>
 <!----------------------END EXTERNALFETCH--------------------->
 

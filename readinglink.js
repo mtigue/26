@@ -20,7 +20,7 @@ var mm = nextSunday.getMonth()+1; //January is 0!
 var yyyy = nextSunday.getFullYear();
 if(dd<10){dd='0'+dd} if(mm<10){mm='0'+mm} 
 
- printSunday = yyyy+mm+dd;
+printSunday = yyyy+mm+dd;
 
 // document.write("8 digit code: "+printSunday);
 
